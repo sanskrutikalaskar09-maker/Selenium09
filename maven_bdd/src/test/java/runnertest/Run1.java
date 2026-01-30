@@ -1,4 +1,4 @@
-package stepdefinitions;
+package runnertest;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
@@ -9,8 +9,8 @@ import io.cucumber.testng.CucumberOptions;
 	@SuppressWarnings("deprecation")
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features = "src/test/resources/feature/test.feature" , glue = {"stepdefinitions/test.java"} , monochrome = true,
+			features = "src/test/resources/feature1" , glue = {"runnertest"} , monochrome = true,
 			plugin = {"pretty","html:target/HtmlReports.html","json:target/JSONReports.xml"}
 			)
-	public class runtest extends AbstractTestNGCucumberTests {
+	public class Run1 extends AbstractTestNGCucumberTests {
 }

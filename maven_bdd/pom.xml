@@ -6,7 +6,13 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
-       
+       <!-- Source: https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.34.1</version>
+    <scope>compile</scope>
+</dependency>
 
         <!-- Selenium 4.x for browser automation -->
         <dependency>
@@ -36,7 +42,12 @@
     <version>7.33.0</version>
     <scope>test</scope>
   </dependency>
-  
+
+    	<dependency>
+    		<groupId>mavenExtent</groupId>
+    		<artifactId>mavenExtent</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
     </dependencies>
     <properties>
     <maven.compiler.target>17</maven.compiler.target>
